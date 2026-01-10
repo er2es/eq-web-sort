@@ -17,11 +17,7 @@ const SortColGuides = (props) => {
     <ColorBarDivContainer id="colorBarDivContainer">
       {qSortHeaderNumbers.map((value, index) => {
         return (
-          <ColorBarDiv
-            key={uuid()}
-            width={columnWidth}
-            color={columnHeadersColorsArray[index]}
-          >
+          <ColorBarDiv key={uuid()} width={columnWidth} color={columnHeadersColorsArray[index]}>
             {value}
           </ColorBarDiv>
         );
